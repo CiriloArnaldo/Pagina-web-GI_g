@@ -36,11 +36,11 @@ p {
     margin: 15px 0 20px 0;
 }
 
-.section-p1 {
+.section-p1 {            /* Defini un section padding */
     padding: 40px 80px;
 }
 
-.section-m1 {
+.section-m1 {           /* Defini un section margin */
     padding: 40px 0;
 }
 
@@ -51,7 +51,7 @@ body {
 /* Header Start */
 #header{
     display: flex;
-    slign-items: center;
+    align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
     background: #E3E6F3;
@@ -114,15 +114,16 @@ body {
 }
 
 #hero h4 {
-    paddign-bottom: 15px;
+    padding-bottom: 15px;
 }
 #hero h1 {
     color: #088178;
 }
 
 #hero button {
-    background-image: url(img/button.png); /*En el video no escala la imagen, sino cambia el la posición del texto con PADDING*/
+    background-image: url("img/button.png"); /*En el video no escala la imagen, sino cambia el la posición del texto con PADDING*/
     background-color: transparent;
+    background-size: 226px 50px;
     color: #088178;
     border: 0;
     padding: 18px 80px 14px 65px; /*Top left botton right */
@@ -132,6 +133,27 @@ body {
     font-size: 15px;
 }
 
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;  /*from top and bottom | from left and right*/
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03); /*x y radius color*/
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0; /*from top and bottom | from left and right*/
+}
+#feature .fe-box:hover { /* Agregamos el efecto HOVER*/
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px; /*Top left Botton right*/
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
 
 
 /* Shop Page */

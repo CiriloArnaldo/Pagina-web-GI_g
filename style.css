@@ -193,6 +193,14 @@ body {
     text-align: center;
 }
 
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
 #product1 .pro {
     width: 23%;
     min-width: 250px;
@@ -204,7 +212,7 @@ body {
     margin: 15px 0; /*From top and bottom | from left and right*/
     transition: 0.2s ease; /*For smooth transition*/
 
-    position: relative; /*Para que el icono CHART pueda estar bien ubicado*/
+    position: relative; /*Para que el icono CHART dentro de los productos pueda estar bien ubicado | esto porque PRO es el padre de CART*/
 }
 
 #product1 .pro:hover{
@@ -243,12 +251,13 @@ body {
     line-height: 40px;
     border-radius: 50px;
     background-color: #e8f6ea;
-    font-weight: 500;
+    /*font-weight: 500;*/
     color: #088178;
     border: 1px solid #cce7d0;
     position: absolute;
     bottom: 20px;
     right: 10px;
+    
 }
 
 /* Shop Page */

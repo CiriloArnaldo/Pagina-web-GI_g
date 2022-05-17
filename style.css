@@ -1,6 +1,7 @@
 /*Obteniendo fuentes de google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/*GLOBAL STYLINGS*/
 * { /*Universal selector*/
     margin: 0;
     padding: 0;
@@ -37,11 +38,24 @@ p {
 }
 
 .section-p1 {            /* Defini un section padding */
-    padding: 40px 80px;
+    padding: 40px 80px; /*top and bottom paddings are 40px | right and left paddings are 80px*/
 }
 
 .section-m1 {           /* Defini un section margin */
     padding: 40px 0;
+}
+
+button.normal { /*Global styling de button pero que tienen la clase "normal"*/
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
 }
 
 body {
@@ -198,7 +212,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*Para desplazar*/
 }
 
 #product1 .pro {
@@ -257,7 +271,39 @@ body {
     position: absolute;
     bottom: 20px;
     right: 10px;
-    
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: #ef3636;
+}
+
+#banner button:hover { /*Agregando una acción de estilo correspondiente a un efecto HOVER al botton*/
+    background: #088178; /*Color del bakground del botton*/
+    color: #fff; /*Cambiar el color del texto*/
 }
 
 /* Shop Page */
